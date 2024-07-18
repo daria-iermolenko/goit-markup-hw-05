@@ -594,8 +594,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 color:#404BBF; 
 }
  
-.close-icon:hover,
-.close-icon:focus {
+.close-button:hover .close-icon,
+.close-button:focus .close-icon {
     fill: #ffffff;
 }
 
@@ -649,4 +649,89 @@ display: flex;
     padding: 3px 0px;
         width: 18px;
         height: 24px;
+}
+
+
+
+
+.checkbox-container {
+    margin-bottom: 24px;
+}
+.accept-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    padding-right: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox {
+    cursor: pointer;
+}
+.custom-checkbox {
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox:checked+.checkbox>.custom-checkbox {
+    border: none;
+    background-color: #404bbf;
+    fill: #f4f4fd;
+}
+
+.checkbox-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}  
+.policy {
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+
+.send-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 24px auto 0;
+    border-radius: 4px;
+    padding: 16px 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    background: #404bbf;
 }
