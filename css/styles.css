@@ -544,6 +544,7 @@ font-weight: 500;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
 }
 
 .modal-overlay.is-open {
@@ -556,8 +557,8 @@ font-weight: 500;
     position: absolute;
     top: 50%;
     left: 50%;
-       min-height: 584px;
-        max-width: 408px;
+    width: 408px; 
+ min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -676,9 +677,16 @@ transform: translateY(-50%);
  height: 24px;
 
 }
-
+.comment {
+    margin-bottom: 16px;
+}
 .form-coment {
 margin-bottom: 16px;
+font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 }
 
 .input-comment {
@@ -725,7 +733,24 @@ width: 100%;
 .checkbox {
     cursor: pointer;
 }
+.visually-hidden {
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.label-checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
 .custom-checkbox {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 16px;
@@ -738,19 +763,13 @@ width: 100%;
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-checkbox:checked+.checkbox>.custom-checkbox {
+.modal-checkbox:checked+.checkbox.custom-checkbox {
     border: none;
     background-color: #404bbf;
     fill: #f4f4fd;
 }
 
 .policy {
-    font-family: "Roboto", sans-serif;
-font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
     line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;

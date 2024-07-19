@@ -423,7 +423,7 @@
     <label class="form-label" for="input-phone">Phone</label>
     <div class="input-wrapper">
         <input 
-          type="tel"
+          type="text"
           class="form-input"
            name="input-phone"
             id="input-phone"
@@ -447,12 +447,12 @@
         </svg>
     </div>
 </div>
-<div class="form-field">
+<div class="comment">
     <label class="form-coment" for="user-comment">Comment</label>
 <textarea 
 name="user-comment"
  class="input-comment" 
- id="comment"
+ id="user-comment"
   placeholder="Text input">
 </textarea>
 </div>
@@ -460,12 +460,12 @@ name="user-comment"
 
 <div class="checkbox-container">
     <input type="checkbox"
-     name="user-privacy" 
+    class="modal-checkbox visually-hidden"
+    name="user-privacy" 
      id="user-privacy"
-     value="true" 
-     ="modal-checkbox visually-hidden">
-    <label 
-    class="label-checkbox"
+     value="true">
+     
+    <label class="label-checkbox"
      for="user-privacy">
         <span class="custom-checkbox">
             <svg class="accept-icon" width="10" height="8">
